@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F0B71042822AC3700CCD755 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B71032822AC3700CCD755 /* BannerViewController.swift */; };
 		4F0B71062822AFD300CCD755 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B71052822AFD200CCD755 /* SplashViewController.swift */; };
 		4F0B71082822B3A900CCD755 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B71072822B3A900CCD755 /* GuideViewController.swift */; };
 		4F0B710B2822B96100CCD755 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B710A2822B96100CCD755 /* Constant.swift */; };
@@ -38,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4F0B71032822AC3700CCD755 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		4F0B71052822AFD200CCD755 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		4F0B71072822B3A900CCD755 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		4F0B710A2822B96100CCD755 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 		4F0B71022822ABF800CCD755 /* ViewControll */ = {
 			isa = PBXGroup;
 			children = (
-				4F0B71032822AC3700CCD755 /* BannerViewController.swift */,
 				4F0B71052822AFD200CCD755 /* SplashViewController.swift */,
 				4F0B71072822B3A900CCD755 /* GuideViewController.swift */,
 			);
@@ -283,7 +280,6 @@
 				4F0B71062822AFD300CCD755 /* SplashViewController.swift in Sources */,
 				4F0B71082822B3A900CCD755 /* GuideViewController.swift in Sources */,
 				4F0B710B2822B96100CCD755 /* Constant.swift in Sources */,
-				4F0B71042822AC3700CCD755 /* BannerViewController.swift in Sources */,
 				4FEC356728228E630062A796 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

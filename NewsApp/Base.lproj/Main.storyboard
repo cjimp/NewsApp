@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -76,36 +77,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDm-0V-qHu" userLabel="LoginandRegister">
-                                <rect key="frame" x="62" y="781" width="86" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDm-0V-qHu" userLabel="LoginandRegister">
+                                <rect key="frame" x="50" y="788" width="130" height="44"/>
+                                <color key="backgroundColor" name="ColorMain"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Mwo-8Q-XLK"/>
+                                    <constraint firstAttribute="width" constant="130" id="SLs-21-t6E"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="登录/注册"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8r-fK-wkl" userLabel="Enter">
-                                <rect key="frame" x="267" y="781" width="82" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8r-fK-wkl" userLabel="Enter">
+                                <rect key="frame" x="234" y="788" width="130" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="hVy-sq-ZBc"/>
+                                    <constraint firstAttribute="height" constant="44" id="wO6-jk-VqE"/>
+                                </constraints>
+                                <color key="tintColor" name="ColorMain"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="立即注册"/>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pHc-aB-KAT">
-                                <rect key="frame" x="71" y="102" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Gpg-Al-iPj"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="rUe-ZF-7gE"/>
-                            </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="0IJ-m8-3YP">
-                                <rect key="frame" x="133" y="524" width="116" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CRF-WS-2Ws"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CRF-WS-2Ws" firstAttribute="bottom" secondItem="WDm-0V-qHu" secondAttribute="bottom" constant="30" id="HkP-Ta-fyG"/>
+                            <constraint firstItem="WDm-0V-qHu" firstAttribute="leading" secondItem="CRF-WS-2Ws" secondAttribute="leading" constant="50" id="bB4-u2-Ofe"/>
+                            <constraint firstItem="CRF-WS-2Ws" firstAttribute="bottom" secondItem="D8r-fK-wkl" secondAttribute="bottom" constant="30" id="c48-33-T28"/>
+                            <constraint firstItem="CRF-WS-2Ws" firstAttribute="trailing" secondItem="D8r-fK-wkl" secondAttribute="trailing" constant="50" id="dHD-Wn-ZXj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btEnter" destination="D8r-fK-wkl" id="mXl-0w-Sb2"/>
+                        <outlet property="btLoginOrRegister" destination="WDm-0V-qHu" id="gTW-IS-Tzi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MiS-ig-GKL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878" y="80"/>
+            <point key="canvasLocation" x="876.81159420289862" y="79.6875"/>
         </scene>
         <!--Banner View Controller-->
         <scene sceneID="ZDk-DS-Hdo">
@@ -134,6 +144,9 @@
     </scenes>
     <resources>
         <image name="launchimage" width="414" height="736"/>
+        <namedColor name="ColorMain">
+            <color red="0.0" green="0.5" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
