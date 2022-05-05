@@ -10,6 +10,7 @@
 		4F0B71062822AFD300CCD755 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B71052822AFD200CCD755 /* SplashViewController.swift */; };
 		4F0B71082822B3A900CCD755 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B71072822B3A900CCD755 /* GuideViewController.swift */; };
 		4F0B710B2822B96100CCD755 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B710A2822B96100CCD755 /* Constant.swift */; };
+		4F84340C2823B45700549D5A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F84340B2823B45700549D5A /* LoginViewController.swift */; };
 		4FEC356728228E630062A796 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC356628228E630062A796 /* AppDelegate.swift */; };
 		4FEC356E28228E630062A796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC356C28228E630062A796 /* Main.storyboard */; };
 		4FEC357028228E640062A796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC356F28228E640062A796 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		4F0B71052822AFD200CCD755 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		4F0B71072822B3A900CCD755 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		4F0B710A2822B96100CCD755 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4F84340B2823B45700549D5A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4FEC356328228E630062A796 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEC356628228E630062A796 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FEC356D28228E630062A796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				4F0B71052822AFD200CCD755 /* SplashViewController.swift */,
 				4F0B71072822B3A900CCD755 /* GuideViewController.swift */,
+				4F84340B2823B45700549D5A /* LoginViewController.swift */,
 			);
 			path = ViewControll;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F0B71062822AFD300CCD755 /* SplashViewController.swift in Sources */,
+				4F84340C2823B45700549D5A /* LoginViewController.swift in Sources */,
 				4F0B71082822B3A900CCD755 /* GuideViewController.swift in Sources */,
 				4F0B710B2822B96100CCD755 /* Constant.swift in Sources */,
 				4FEC356728228E630062A796 /* AppDelegate.swift in Sources */,
