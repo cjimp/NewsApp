@@ -8,4 +8,7 @@
 import Foundation
 import UIKit
 
+//账号密码
+var username = "123"
+var password = "456"
 

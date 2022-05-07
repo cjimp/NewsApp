@@ -12,6 +12,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    //进入主界面
+    func toHome(){
+        changeto(String: "Home")
+    }
+    
     // 进入引导界面
     func toGuide(){
         print("do appdelegate toGuide")

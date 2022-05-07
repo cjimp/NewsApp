@@ -18,6 +18,9 @@ class GuideViewController: UIViewController, UIScrollViewDelegate {
     var viewHeight = 0.0
     var viewWidth = 0.0
     
+    @IBAction func Enter(_ sender: Any) {
+        AppDelegate.shared.toHome()
+    }
     @IBAction func Login(_ sender: Any) {
         print("touch btLoginOrRegister")
         AppDelegate.shared.toLogin()

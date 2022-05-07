@@ -10,6 +10,11 @@
 		4F0B71062822AFD300CCD755 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B71052822AFD200CCD755 /* SplashViewController.swift */; };
 		4F0B71082822B3A900CCD755 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B71072822B3A900CCD755 /* GuideViewController.swift */; };
 		4F0B710B2822B96100CCD755 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B710A2822B96100CCD755 /* Constant.swift */; };
+		4F3942052826997100CE2EED /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3942042826997100CE2EED /* HomeTableViewController.swift */; };
+		4F3942092826A65100CE2EED /* HomeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3942082826A65000CE2EED /* HomeCellTableViewCell.swift */; };
+		4F39420B2826AF2F00CE2EED /* team.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F39420A2826AF2F00CE2EED /* team.plist */; };
+		4F5F725328265D6F00B55C7F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F725228265D6F00B55C7F /* RegisterViewController.swift */; };
+		4F7B146F2826BFB400B01A1E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B146E2826BFB400B01A1E /* DetailViewController.swift */; };
 		4F84340C2823B45700549D5A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F84340B2823B45700549D5A /* LoginViewController.swift */; };
 		4FEC356728228E630062A796 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC356628228E630062A796 /* AppDelegate.swift */; };
 		4FEC356E28228E630062A796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC356C28228E630062A796 /* Main.storyboard */; };
@@ -41,6 +46,11 @@
 		4F0B71052822AFD200CCD755 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		4F0B71072822B3A900CCD755 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		4F0B710A2822B96100CCD755 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4F3942042826997100CE2EED /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		4F3942082826A65000CE2EED /* HomeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellTableViewCell.swift; sourceTree = "<group>"; };
+		4F39420A2826AF2F00CE2EED /* team.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team.plist; sourceTree = "<group>"; };
+		4F5F725228265D6F00B55C7F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4F7B146E2826BFB400B01A1E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4F84340B2823B45700549D5A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4FEC356328228E630062A796 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEC356628228E630062A796 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +96,9 @@
 				4F0B71052822AFD200CCD755 /* SplashViewController.swift */,
 				4F0B71072822B3A900CCD755 /* GuideViewController.swift */,
 				4F84340B2823B45700549D5A /* LoginViewController.swift */,
+				4F5F725228265D6F00B55C7F /* RegisterViewController.swift */,
+				4F3942042826997100CE2EED /* HomeTableViewController.swift */,
+				4F7B146E2826BFB400B01A1E /* DetailViewController.swift */,
 			);
 			path = ViewControll;
 			sourceTree = "<group>";
@@ -96,6 +109,14 @@
 				4F0B710A2822B96100CCD755 /* Constant.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		4F5F725428265E5600B55C7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F3942082826A65000CE2EED /* HomeCellTableViewCell.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4FEC355A28228E630062A796 = {
@@ -121,12 +142,14 @@
 		4FEC356528228E630062A796 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				4F5F725428265E5600B55C7F /* Model */,
 				4F0B71092822B86000CCD755 /* Util */,
 				4F0B71022822ABF800CCD755 /* ViewControll */,
 				4FEC356628228E630062A796 /* AppDelegate.swift */,
 				4FEC356C28228E630062A796 /* Main.storyboard */,
 				4FEC356F28228E640062A796 /* Assets.xcassets */,
 				4FEC357128228E640062A796 /* LaunchScreen.storyboard */,
+				4F39420A2826AF2F00CE2EED /* team.plist */,
 				4FEC357428228E640062A796 /* Info.plist */,
 			);
 			path = NewsApp;
@@ -256,6 +279,7 @@
 				4FEC357328228E640062A796 /* LaunchScreen.storyboard in Resources */,
 				4FEC357028228E640062A796 /* Assets.xcassets in Resources */,
 				4FEC356E28228E630062A796 /* Main.storyboard in Resources */,
+				4F39420B2826AF2F00CE2EED /* team.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F7B146F2826BFB400B01A1E /* DetailViewController.swift in Sources */,
 				4F0B71062822AFD300CCD755 /* SplashViewController.swift in Sources */,
 				4F84340C2823B45700549D5A /* LoginViewController.swift in Sources */,
+				4F3942092826A65100CE2EED /* HomeCellTableViewCell.swift in Sources */,
 				4F0B71082822B3A900CCD755 /* GuideViewController.swift in Sources */,
+				4F5F725328265D6F00B55C7F /* RegisterViewController.swift in Sources */,
+				4F3942052826997100CE2EED /* HomeTableViewController.swift in Sources */,
 				4F0B710B2822B96100CCD755 /* Constant.swift in Sources */,
 				4FEC356728228E630062A796 /* AppDelegate.swift in Sources */,
 			);
