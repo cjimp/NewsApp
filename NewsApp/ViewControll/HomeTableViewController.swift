@@ -33,14 +33,11 @@ class HomeTableViewController: UITableViewController {
         {
             let detail = segue.destination as! DetailViewController
             let indexPath = self.tableView.indexPathForSelectedRow as IndexPath?
-            print(indexPath)
+           // print(indexPath)
             let selectedIndex = indexPath!.row
-            print("test")
-            print(selectedIndex)
+            //print(selectedIndex)
             
             let dict = self.listData[selectedIndex]
-            print("bbbbbbb")
-            print(dict)
             detail.url = dict["url"]
         }
     }
@@ -58,8 +55,8 @@ class HomeTableViewController: UITableViewController {
         cell.myImage.layer.cornerRadius = 25
         
         //
-        let image = UIImage(named: rowDict["image"]!)
-        cell.myImage = UIImageView(image: image)
+        let imagepath=String(format: "%@.png",rowDict["image"]!)
+        cell.myImage?.image=UIImage(named: imagepath)
         cell.namelable.text = rowDict["name"]
         cell.datelable.text = rowDict["date"]
         

@@ -6,7 +6,7 @@
 		<key>url</key>
 		<string>https://www.bilibili.com/</string>
 		<key>image</key>
-		<string>dlrb</string>
+		<string>logo2</string>
 		<key>name</key>
 		<string>Dear-迪丽热巴</string>
 		<key>date</key>
@@ -16,11 +16,11 @@
 		<key>url</key>
 		<string>https://www.baidu.com/</string>
 		<key>image</key>
-		<string>dirb</string>
+		<string>logo2</string>
 		<key>name</key>
-		<string>Dear-迪丽热巴</string>
+		<string>牛马</string>
 		<key>date</key>
-		<string>2022-04-25</string>
+		<string>前路未定，你我皆是牛马</string>
 	</dict>
 </array>
 </plist>
