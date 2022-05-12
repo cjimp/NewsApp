@@ -55,8 +55,8 @@ class HomeTableViewController: UITableViewController {
         cell.myImage.layer.cornerRadius = 25
         
         //
-        let imagepath=String(format: "%@.png",rowDict["image"]!)
-        cell.myImage?.image=UIImage(named: imagepath)
+        let imagepath = rowDict["image"]
+        cell.myImage?.image=UIImage(named: imagepath!)
         cell.namelable.text = rowDict["name"]
         cell.datelable.text = rowDict["date"]
         

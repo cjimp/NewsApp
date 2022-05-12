@@ -615,29 +615,6 @@
             </objects>
             <point key="canvasLocation" x="2767" y="885"/>
         </scene>
-        <!--我的-->
-        <scene sceneID="52v-rk-qmA">
-            <objects>
-                <viewController id="1xm-iK-4rh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jMh-ca-9Yd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dirb" translatesAutoresizingMaskIntoConstraints="NO" id="4EG-FO-YdB">
-                                <rect key="frame" x="78" y="190" width="259" height="382"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="XvX-6q-bqf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="我的" image="person.fill" catalog="system" id="7Qe-xN-uyG"/>
-                    <navigationItem key="navigationItem" id="NpI-9U-YOv"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sKN-Qa-ehU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1890" y="1952"/>
-        </scene>
         <!--Detail View Controller-->
         <scene sceneID="ikX-ZD-oae">
             <objects>
@@ -668,6 +645,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HbJ-qI-VeO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3628.985507246377" y="884.59821428571422"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="52v-rk-qmA">
+            <objects>
+                <viewController id="1xm-iK-4rh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jMh-ca-9Yd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dirb" translatesAutoresizingMaskIntoConstraints="NO" id="4EG-FO-YdB">
+                                <rect key="frame" x="78" y="190" width="259" height="382"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XvX-6q-bqf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的" image="person.fill" catalog="system" id="7Qe-xN-uyG"/>
+                    <navigationItem key="navigationItem" id="NpI-9U-YOv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKN-Qa-ehU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="1952"/>
         </scene>
     </scenes>
     <resources>

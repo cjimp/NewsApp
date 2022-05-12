@@ -6,7 +6,7 @@
 		<key>url</key>
 		<string>https://www.bilibili.com/</string>
 		<key>image</key>
-		<string>logo2</string>
+		<string>logo2.png</string>
 		<key>name</key>
 		<string>Dear-迪丽热巴</string>
 		<key>date</key>
@@ -16,7 +16,7 @@
 		<key>url</key>
 		<string>https://www.baidu.com/</string>
 		<key>image</key>
-		<string>logo2</string>
+		<string></string>
 		<key>name</key>
 		<string>牛马</string>
 		<key>date</key>

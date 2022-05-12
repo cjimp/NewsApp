@@ -19,37 +19,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchimage" translatesAutoresizingMaskIntoConstraints="NO" id="G6b-mI-yp7" userLabel="launchimage">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大作业" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhD-gU-u7g" userLabel="标题">
-                                <rect key="frame" x="149.5" y="144" width="115" height="45.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学号：xxxxx" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34O-6J-lYL" userLabel="学号">
-                                <rect key="frame" x="141.5" y="269.5" width="131" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名：xxx" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5X-pF-Qa0" userLabel="姓名">
-                                <rect key="frame" x="151" y="338.5" width="112.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="G6b-mI-yp7" secondAttribute="bottom" id="2u6-Fe-LRe"/>
                             <constraint firstItem="G6b-mI-yp7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Daj-GN-nIV"/>
-                            <constraint firstItem="E5X-pF-Qa0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KdX-NC-wgr"/>
                             <constraint firstItem="G6b-mI-yp7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Nth-Yl-zXN"/>
-                            <constraint firstItem="E5X-pF-Qa0" firstAttribute="top" secondItem="34O-6J-lYL" secondAttribute="bottom" constant="40" id="XAe-6p-Jo9"/>
-                            <constraint firstItem="lhD-gU-u7g" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="afo-NZ-w1V"/>
-                            <constraint firstItem="lhD-gU-u7g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ajf-Az-xSk"/>
-                            <constraint firstItem="34O-6J-lYL" firstAttribute="top" secondItem="lhD-gU-u7g" secondAttribute="bottom" constant="80" id="ix5-7Y-sB6"/>
-                            <constraint firstItem="34O-6J-lYL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rZx-Gp-hnv"/>
                             <constraint firstItem="G6b-mI-yp7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xQB-ID-gdl"/>
                         </constraints>
                     </view>
