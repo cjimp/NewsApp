@@ -6,9 +6,41 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class SplashViewController: UIViewController {
 
+    func request(url:String){
+ //       let requesturl = "http://c.m.163.com/nc/article/headline/T1348647853363/0-40.html"
+        let test = AF.request(url, method: .post).responseJSON { [self]response in
+//            debugPrint(response)
+//            print("-----------")
+//            print(response.value)
+//            print("-----------")
+//            print(response.result)
+
+//             由于测试过，就没有进行失败判断
+//            print("-----------")
+            let getjson = JSON(response.value)
+//            print(json)
+            let datajson = JSON(getjson["T1348647853363"])
+            json = datajson
+//            print(json)
+//            print(datajson)
+//            let title = json["T1348647853363"][0]["source"].string
+//            print(title)
+//            let test = datajson[0]["title"].string
+//            print(test)
+        }
+    }
+    
+    //请求网络json数据，并对json数据进行解析
+    func initsplash(){
+        //太简单了，就没有进行封装
+        let requesturl = "http://c.m.163.com/nc/article/headline/T1348647853363/0-40.html"
+        request(url: requesturl)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,7 +48,8 @@ class SplashViewController: UIViewController {
         
         //进入下一个界面
         //为了装一下，因为项目太小，不需要加载时间，特意设置几秒意思一下
-        DispatchQueue.main.asyncAfter(deadline: .now()+2.0){  //线程里面相关的延时，老师应该不会问
+        initsplash()
+        DispatchQueue.main.asyncAfter(deadline: .now()+2.0){
             self.next()
         }
     }

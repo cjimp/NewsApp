@@ -220,7 +220,6 @@
 				A6F01F0CF0BFD1904E9E333F /* Pods-NewsAppTests.debug.xcconfig */,
 				3DB726AE629D85943A3A70C3 /* Pods-NewsAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

@@ -8,9 +8,10 @@
 import UIKit
 
 class HomeCellTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var myImage: UIImageView!
-    @IBOutlet weak var datelable: UILabel!
-    @IBOutlet weak var namelable: UILabel!
+    
+    @IBOutlet weak var sourcelable: UILabel!
+    @IBOutlet weak var ptimelable: UILabel!
+    @IBOutlet weak var titlelable: UILabel!
+    @IBOutlet weak var imgsrc: UIImageView!
     
 }

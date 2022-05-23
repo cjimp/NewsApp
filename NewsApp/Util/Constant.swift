@@ -7,8 +7,10 @@
 
 import Foundation
 import UIKit
+import SwiftyJSON
 
 //账号密码
 var username = "123"
 var password = "456"
 
+var json: JSON!

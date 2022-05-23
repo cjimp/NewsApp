@@ -9,12 +9,17 @@ import UIKit
 
 class DetailViewController: UIViewController, UIWebViewDelegate {
     
+    
+    
     var url:String!
+    var row:Int!
+    
     @IBOutlet weak var webView: UIWebView!
     
     func initview() {
-        print(url)
-        let url=URL(string: self.url)
+        
+        
+        let url=URL(string: url)
         
         let request=URLRequest(url: url!)
         self.webView.loadRequest(request)
