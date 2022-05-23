@@ -706,32 +706,60 @@
         <!--我的-->
         <scene sceneID="52v-rk-qmA">
             <objects>
-                <viewController id="1xm-iK-4rh" sceneMemberID="viewController">
+                <viewController id="1xm-iK-4rh" customClass="MyinfoViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jMh-ca-9Yd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dirb" translatesAutoresizingMaskIntoConstraints="NO" id="4EG-FO-YdB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="4EG-FO-YdB">
                                 <rect key="frame" x="79" y="84" width="256" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256" id="VDD-Yx-msD"/>
                                     <constraint firstAttribute="width" constant="256" id="XaA-Rr-ehp"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RxH-UF-k5p">
+                                <rect key="frame" x="57" y="373" width="300" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qf-IA-ocB">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="75"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8f9-mU-L1D">
+                                        <rect key="frame" x="0.0" y="75" width="300" height="75"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="8gz-y7-uS9"/>
+                                    <constraint firstAttribute="height" constant="150" id="vwq-il-fC6"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XvX-6q-bqf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="RxH-UF-k5p" firstAttribute="centerY" secondItem="jMh-ca-9Yd" secondAttribute="centerY" id="6mK-LP-COO"/>
                             <constraint firstItem="4EG-FO-YdB" firstAttribute="top" secondItem="XvX-6q-bqf" secondAttribute="top" constant="40" id="9yQ-Nx-zde"/>
                             <constraint firstItem="4EG-FO-YdB" firstAttribute="centerX" secondItem="jMh-ca-9Yd" secondAttribute="centerX" id="i9B-03-Qky"/>
+                            <constraint firstItem="RxH-UF-k5p" firstAttribute="centerX" secondItem="jMh-ca-9Yd" secondAttribute="centerX" id="lIS-fZ-B8V"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="我的" image="person.fill" catalog="system" id="7Qe-xN-uyG"/>
                     <navigationItem key="navigationItem" id="NpI-9U-YOv"/>
+                    <connections>
+                        <outlet property="image" destination="4EG-FO-YdB" id="P0v-mX-xjz"/>
+                        <outlet property="lablepw" destination="8f9-mU-L1D" id="lGF-Z6-sZq"/>
+                        <outlet property="user" destination="8qf-IA-ocB" id="pE2-Kh-9Ce"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKN-Qa-ehU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1890" y="2531"/>
+            <point key="canvasLocation" x="1889.8550724637682" y="2530.5803571428569"/>
         </scene>
         <!--Item-->
         <scene sceneID="bvV-zQ-XNp">
@@ -836,7 +864,13 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="收藏夹" image="square.grid.3x1.folder.fill.badge.plus" catalog="system" id="Wcb-74-B8A"/>
-                    <navigationItem key="navigationItem" title="收藏夹" id="tcq-0J-j4G"/>
+                    <navigationItem key="navigationItem" title="收藏夹" id="tcq-0J-j4G">
+                        <barButtonItem key="rightBarButtonItem" title="刷新" style="plain" id="hjQ-YU-Imn">
+                            <connections>
+                                <action selector="Refresh:" destination="O7M-1O-R34" id="PZ4-gK-d9J"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ju-GO-Ycg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -894,13 +928,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
-        <image name="chart.bar.doc.horizontal.fill" catalog="system" width="115" height="128"/>
-        <image name="dirb" width="90" height="90"/>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="32" height="32"/>
+        <image name="chart.bar.doc.horizontal.fill" catalog="system" width="32" height="32"/>
         <image name="launchimage" width="414" height="736"/>
         <image name="logo" width="279" height="279"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="square.grid.3x1.folder.fill.badge.plus" catalog="system" width="128" height="91"/>
+        <image name="person.fill" catalog="system" width="32" height="32"/>
+        <image name="square.grid.3x1.folder.fill.badge.plus" catalog="system" width="32" height="32"/>
         <namedColor name="ColorMain">
             <color red="0.0" green="0.5" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

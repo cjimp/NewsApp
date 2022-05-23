@@ -17,7 +17,7 @@ class DetailViewController: UIViewController, UIWebViewDelegate {
     
     @IBAction func collect(_ sender: Any) {
         addcollect()
-        let p = UIAlertController(title: "收藏成功", message: "以收藏至收藏夹", preferredStyle:.alert)
+        let p = UIAlertController(title: "收藏成功", message: "已收藏至收藏夹", preferredStyle:.alert)
         p.addAction(UIAlertAction(title: "确定", style: .default, handler: {
             (act:UIAlertAction) in print("收藏成功")
         }))
@@ -34,7 +34,7 @@ class DetailViewController: UIViewController, UIWebViewDelegate {
                                           imgsrc <- jsondata.imgsrc
                                          ))
             debugPrint("inserted id: \(rowid)")
-            debugPrint(collectdata)
+            debugPrint(collectdata[source])
 
         }catch{
             print(error)
@@ -43,6 +43,7 @@ class DetailViewController: UIViewController, UIWebViewDelegate {
     
     func initview() {
         jsondata.title = json[row]["title"].string!
+        print(jsondata.title)
         jsondata.imgsrc = json[row]["imgsrc"].string!
         jsondata.source = json[row]["source"].string!
         jsondata.url = json[row]["url"].string!

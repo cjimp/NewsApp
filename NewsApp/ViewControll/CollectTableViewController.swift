@@ -12,9 +12,12 @@ class CollectTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.reloadData()
+        
     }
 
+    @IBAction func Refresh(_ sender: Any) {
+        self.tableView.reloadData()
+    }
     // MARK: - Table view data source
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -22,22 +25,33 @@ class CollectTableViewController: UITableViewController {
         {
             let detail = segue.destination as! CollectionViewController
             let indexPath = self.tableView.indexPathForSelectedRow as IndexPath?
-            let selectedIndex = indexPath!.row
+            var selectedIndex = indexPath!.row
             detail.row = selectedIndex
+            do{
+                for user in try db.prepare(collectdata){
+                    if(selectedIndex == 0){
+                        selectedIndex = selectedIndex - 1
+                        detail.testurl = user[url]!
+                    }else{
+                        selectedIndex = selectedIndex - 1
+                    }
+                }
+            }catch{
+                print(error)
+            }
         }
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeCellTableViewCell
 
-        let cellrow = indexPath.row
-        print(cellrow)
+        var cellrow = indexPath.row
         //修改布局
         tableView.rowHeight = 250
-        var i:Int64 = 1
         do{
             for user in try db.prepare(collectdata){
-                if(i == cellrow+1){
+                if(cellrow == 0){
+                    cellrow = cellrow - 1
                     cell.sourcelable.text = user[source]
                     cell.ptimelable.text = user[ptime]
                     cell.titlelable.text = user[titles]
@@ -49,7 +63,7 @@ class CollectTableViewController: UITableViewController {
                         print(error.localizedDescription)
                     }
                 }else{
-                    i = i+1
+                    cellrow = cellrow - 1
                 }
             }
         }catch{
@@ -63,7 +77,6 @@ class CollectTableViewController: UITableViewController {
         var num = 0
         do{
             num = try db.scalar(collectdata.count)
-            print(num)
         }catch{
             print(error)
         }
