@@ -14,6 +14,9 @@
 		4F3942052826997100CE2EED /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3942042826997100CE2EED /* HomeTableViewController.swift */; };
 		4F3942092826A65100CE2EED /* HomeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3942082826A65000CE2EED /* HomeCellTableViewCell.swift */; };
 		4F39420B2826AF2F00CE2EED /* team.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F39420A2826AF2F00CE2EED /* team.plist */; };
+		4F57D73D283B96AB001008DF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F57D73C283B96AB001008DF /* Data.swift */; };
+		4F57D73F283B9E5E001008DF /* CollectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F57D73E283B9E5E001008DF /* CollectTableViewController.swift */; };
+		4F57D741283BA086001008DF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F57D740283BA086001008DF /* CollectionViewController.swift */; };
 		4F5F725328265D6F00B55C7F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F725228265D6F00B55C7F /* RegisterViewController.swift */; };
 		4F6FE96D28291C8500B338F9 /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F6FE96C28291C8500B338F9 /* logo2.png */; };
 		4F7B146F2826BFB400B01A1E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B146E2826BFB400B01A1E /* DetailViewController.swift */; };
@@ -55,6 +58,9 @@
 		4F3942042826997100CE2EED /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		4F3942082826A65000CE2EED /* HomeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellTableViewCell.swift; sourceTree = "<group>"; };
 		4F39420A2826AF2F00CE2EED /* team.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team.plist; sourceTree = "<group>"; };
+		4F57D73C283B96AB001008DF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		4F57D73E283B9E5E001008DF /* CollectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectTableViewController.swift; sourceTree = "<group>"; };
+		4F57D740283BA086001008DF /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		4F5F725228265D6F00B55C7F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4F6FE96C28291C8500B338F9 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
 		4F7B146E2826BFB400B01A1E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +122,8 @@
 				4F5F725228265D6F00B55C7F /* RegisterViewController.swift */,
 				4F3942042826997100CE2EED /* HomeTableViewController.swift */,
 				4F7B146E2826BFB400B01A1E /* DetailViewController.swift */,
+				4F57D73E283B9E5E001008DF /* CollectTableViewController.swift */,
+				4F57D740283BA086001008DF /* CollectionViewController.swift */,
 			);
 			path = ViewControll;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				4F3942082826A65000CE2EED /* HomeCellTableViewCell.swift */,
+				4F57D73C283B96AB001008DF /* Data.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -464,7 +473,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F57D741283BA086001008DF /* CollectionViewController.swift in Sources */,
+				4F57D73F283B9E5E001008DF /* CollectTableViewController.swift in Sources */,
 				4F7B146F2826BFB400B01A1E /* DetailViewController.swift in Sources */,
+				4F57D73D283B96AB001008DF /* Data.swift in Sources */,
 				4F0B71062822AFD300CCD755 /* SplashViewController.swift in Sources */,
 				4F84340C2823B45700549D5A /* LoginViewController.swift in Sources */,
 				4F3942092826A65100CE2EED /* HomeCellTableViewCell.swift in Sources */,

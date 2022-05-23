@@ -21,6 +21,7 @@ class HomeTableViewController: UITableViewController {
         super.viewDidLoad()
         //初始化
         initHome()
+        self.tableView.reloadData()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,11 +31,8 @@ class HomeTableViewController: UITableViewController {
             let detail = segue.destination as! DetailViewController
             let indexPath = self.tableView.indexPathForSelectedRow as IndexPath?
             let selectedIndex = indexPath!.row
-//            print(selectedIndex)
-//            print(json[selectedIndex]["url"].string!)
-
-            let url = json[selectedIndex]["url"].string!
-            detail.url = url
+            //print(selectedIndex)
+            //print(json[selectedIndex]["url"].string!)
             detail.row = selectedIndex
 
         }
@@ -44,7 +42,7 @@ class HomeTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeCellTableViewCell
 
         let cellrow = indexPath.row
-        print(cellrow)
+        //print(cellrow)
         //修改布局
         tableView.rowHeight = 250
 

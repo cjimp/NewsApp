@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import SQLite
 
 class SplashViewController: UIViewController {
 
@@ -35,11 +36,29 @@ class SplashViewController: UIViewController {
         }
     }
     
+    func dbmanage(){
+        do{
+            db = try Connection(.temporary)
+            
+            try db.run(collectdata.create(ifNotExists: true) { t in     // CREATE TABLE
+                t.column(id, primaryKey: true)
+                t.column(url)
+                t.column(titles)
+                t.column(source)
+                t.column(ptime)
+                t.column(imgsrc)
+            })
+        }catch{
+            print(error)
+        }
+    }
+    
     //请求网络json数据，并对json数据进行解析
     func initsplash(){
         //太简单了，就没有进行封装
         let requesturl = "http://c.m.163.com/nc/article/headline/T1348647853363/0-40.html"
-        request(url: requesturl)
+        request(url:requesturl)
+        dbmanage()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
