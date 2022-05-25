@@ -1,6 +1,6 @@
 //
 //  SplashViewController.swift
-//  加载界面：可以放广告
+//  加载页：加载json，创建数据库
 //
 //  Created by pc on 2022/5/4.
 //

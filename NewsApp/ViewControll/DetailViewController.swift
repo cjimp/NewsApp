@@ -1,6 +1,6 @@
 //
 //  DetailViewController.swift
-//  NewsApp
+//  首页详情页：新闻具体页面以及收藏按钮
 //
 //  Created by pc on 2022/5/7.
 //
@@ -15,6 +15,7 @@ class DetailViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var btCollect: UIButton!
     @IBOutlet weak var webView: UIWebView!
     
+    //收藏新闻
     @IBAction func collect(_ sender: Any) {
         addcollect()
         let p = UIAlertController(title: "收藏成功", message: "已收藏至收藏夹", preferredStyle:.alert)
@@ -24,7 +25,7 @@ class DetailViewController: UIViewController, UIWebViewDelegate {
         present(p, animated: false, completion: nil)
         
     }
-    
+    //添加到数据库
     func addcollect(){
         do{
             let rowid = try db.run(collectdata.insert(titles <- jsondata.title,
@@ -40,7 +41,7 @@ class DetailViewController: UIViewController, UIWebViewDelegate {
             print(error)
         }
     }
-    
+    //初始化数据
     func initview() {
         jsondata.title = json[row]["title"].string!
         print(jsondata.title)

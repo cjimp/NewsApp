@@ -1,6 +1,6 @@
 //
 //  CollectUITableViewController.swift
-//  NewsApp
+//  收藏页：显示收藏的新闻数据
 //
 //  Created by pc on 2022/5/23.
 //
@@ -15,10 +15,11 @@ class CollectTableViewController: UITableViewController {
         
     }
 
+    //刷新界面
     @IBAction func Refresh(_ sender: Any) {
         self.tableView.reloadData()
     }
-    // MARK: - Table view data source
+    //点击跳转
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if(segue.identifier=="collection")
@@ -42,6 +43,7 @@ class CollectTableViewController: UITableViewController {
         }
     }
 
+    //实例化cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeCellTableViewCell
 
@@ -82,7 +84,5 @@ class CollectTableViewController: UITableViewController {
         }
         return num
     }
-
- 
 
 }

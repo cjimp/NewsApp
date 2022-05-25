@@ -1,6 +1,6 @@
 //
 //  HomeCellTableViewCell.swift
-//  NewsApp
+//  自定义TableViewCell
 //
 //  Created by pc on 2022/5/7.
 //

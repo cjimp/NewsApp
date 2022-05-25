@@ -1,6 +1,6 @@
 //
 //  MyinfoViewController.swift
-//  NewsApp
+//  个人信息页
 //
 //  Created by pc on 2022/5/23.
 //

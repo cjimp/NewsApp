@@ -1,6 +1,6 @@
 //
 //  HomeTableViewController.swift
-//  NewsApp
+//  首页：展示新闻数据
 //
 //  Created by pc on 2022/5/7.
 //
@@ -12,11 +12,12 @@ import SwiftyJSON
 class HomeTableViewController: UITableViewController {
     
 
-    //测试json是否读取
+    //初始化:测试json是否读取
     func initHome(){
         //print(json)
     }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //初始化
@@ -24,6 +25,7 @@ class HomeTableViewController: UITableViewController {
         self.tableView.reloadData()
     }
 
+    //实现点击cell跳转
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if(segue.identifier=="ShowDetail")
@@ -37,7 +39,7 @@ class HomeTableViewController: UITableViewController {
 
         }
     }
-    // MARK: - Table view data source
+    //实例化cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeCellTableViewCell
 

@@ -1,6 +1,6 @@
 //
 //  LoginOrRegisterViewController.swift
-//  NewsApp
+//  登录页
 //
 //  Created by pc on 2022/5/5.
 //
@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
         
     }
     
-    
+    //跳转到首页：判断账号密码
     @IBAction func toHome(_ sender: Any) {
         if(tfusername.text!.isEmpty){
             let p = UIAlertController(title: "登录失败", message: "用户名为空", preferredStyle:.alert)

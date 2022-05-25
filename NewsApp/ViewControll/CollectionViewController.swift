@@ -1,6 +1,6 @@
 //
 //  CollectionViewController.swift
-//  NewsApp
+//  收藏详情页
 //
 //  Created by pc on 2022/5/23.
 //
@@ -14,6 +14,7 @@ class CollectionViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var webview: UIWebView!
     
+    //取消收藏按钮
     @IBAction func removecollect(_ sender: Any) {
         removecoll()
         let p = UIAlertController(title: "取消收藏成功", message: "已从收藏夹删除", preferredStyle:.alert)
@@ -22,6 +23,7 @@ class CollectionViewController: UIViewController, UIWebViewDelegate {
         }))
         present(p, animated: false, completion: nil)
     }
+    
     //从数据库删除
     func removecoll(){
         let delete = collectdata.filter(url == testurl)

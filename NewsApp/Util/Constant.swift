@@ -1,6 +1,6 @@
 //
 //  Constant.swift
-//  NewsApp
+//  常量类
 //
 //  Created by pc on 2022/5/4.
 //
@@ -16,8 +16,9 @@ var password = "456"
 var json: JSON!
 //数据库
 var db:Connection!
+//表
 var collectdata = Table("collectdata")
-
+//表格元素
 let id = Expression<Int64>("id")
 let titles = Expression<String?>("titles")
 let url = Expression<String?>("url")

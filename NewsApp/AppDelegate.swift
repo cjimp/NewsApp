@@ -29,7 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         changeto(String: "Login")
     }
     
-    //定义一个东西，是啥我也忘了，反正就是返回Appdelegate对象实例， 不是方法和函数
     //返回Appdelegate对象实例
     open class var shared: AppDelegate{
         get{

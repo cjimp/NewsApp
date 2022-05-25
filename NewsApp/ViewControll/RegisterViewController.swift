@@ -1,6 +1,6 @@
 //
 //  RegisterViewController.swift
-//  NewsApp
+//  注册页
 //
 //  Created by pc on 2022/5/5.
 //
@@ -13,6 +13,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var tfpassword: UITextField!
     @IBOutlet weak var tfpasswordagain: UITextField!
     
+    //判断注册
     @IBAction func btRegister(_ sender: Any) {
         if(tfusername.text!.isEmpty){
             let p = UIAlertController(title: "登录失败", message: "用户名为空", preferredStyle:.alert)

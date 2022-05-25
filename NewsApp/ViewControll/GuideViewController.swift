@@ -1,6 +1,6 @@
 //
 //  GuideViewController.swift
-//  NewsApp
+//  引导页：首页轮播图
 //
 //  Created by pc on 2022/5/4.
 //
@@ -26,6 +26,7 @@ class GuideViewController: UIViewController, UIScrollViewDelegate {
         AppDelegate.shared.toLogin()
     }
     
+    //初始化轮播图
     func InitScroll(){
         viewHeight = self.view.frame.size.height-150
         viewWidth = self.view.frame.size.width
@@ -68,7 +69,7 @@ class GuideViewController: UIViewController, UIScrollViewDelegate {
         self.view.addSubview(self.pageControl)
         self.pageControl.addTarget(self, action:#selector(changePage(_:)), for: UIControl.Event.valueChanged)
     }
-    
+    //PageControl
     @objc func changePage(_ sender:AnyObject){
         UIView.animate(withDuration: 0, animations: {
             let whichpage = CGFloat(self.pageControl.currentPage)
