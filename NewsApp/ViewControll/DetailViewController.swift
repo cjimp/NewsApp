@@ -47,10 +47,12 @@ class DetailViewController: UIViewController, UIWebViewDelegate {
         jsondata.imgsrc = json[row]["imgsrc"].string!
         jsondata.source = json[row]["source"].string!
         jsondata.url = json[row]["url"].string!
+        print(jsondata.url)
         jsondata.ptime = json[row]["ptime"].string!
-//        print(jsondata)
+        print(jsondata)
         
         let requesturl = URL(string: jsondata.url)
+        print(requesturl)
         let request = URLRequest(url: requesturl!)
         self.webView.loadRequest(request)
         self.webView.delegate=self
